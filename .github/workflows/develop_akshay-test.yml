@@ -50,5 +50,5 @@ jobs:
         with:
           app-name: 'akshay-test'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2DDE5D2B8728493A96D4C74CBDC33D2D }}
+          publish-profile: ${{ secrets.MOVIESECRET }}
           package: '*.jar'
