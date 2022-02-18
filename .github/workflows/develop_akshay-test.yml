@@ -29,6 +29,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: java-app
+          working-directory: movietask
           path: '${{ github.workspace }}/target/*.jar'
 
   deploy:
@@ -42,6 +43,7 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
         with:
+          working-directory: movietask
           name: java-app
 
       - name: Deploy to Azure Web App
